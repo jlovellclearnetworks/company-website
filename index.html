@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clear Networks Inc. — Network infrastructure for commercial buildings | Toronto</title>
+<meta name="description" content="Clear Networks Inc. designs, installs and supports wired and wireless network infrastructure, firewalls and day-to-day IT for commercial properties across the Greater Toronto Area.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#001D5B;
+    --navy-deep:#00112F;
+    --ink:#0D1B33;
+    --slate:#55637A;
+    --paper:#FFFFFF;
+    --mist:#EFF3F8;
+    --line:#C9D3E2;
+    --cyan:#6FD3E8;
+    --link:#0F5F7A;
+    --measure:62ch;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"IBM Plex Sans",system-ui,sans-serif;
+    font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1120px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
+  a{color:var(--link);text-decoration-thickness:1px;text-underline-offset:3px}
+  :focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--navy-deep);color:#fff;position:relative;overflow:hidden}
+  .masthead{
+    display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
+    padding:1.75rem 0 0;flex-wrap:wrap;
+  }
+  .masthead img{display:block;width:clamp(190px,26vw,268px);height:auto}
+  .locale{
+    color:#9FB4D8;font-size:.9375rem;margin:0;
+  }
+  .hero-copy{padding:clamp(3rem,7vw,5.25rem) 0 clamp(2rem,5vw,3rem)}
+  h1{
+    font-family:Archivo,sans-serif;font-weight:800;
+    font-size:clamp(2.3rem,5.6vw,3.9rem);line-height:1.01;letter-spacing:-.028em;
+    margin:0 0 1.5rem;max-width:17ch;
+  }
+  .standfirst{
+    font-size:clamp(1.0625rem,1.5vw,1.25rem);color:#C3D2EA;margin:0;max-width:52ch;
+  }
+  .hero-art{display:block;width:100%;height:clamp(190px,26vw,320px);object-fit:cover;object-position:bottom}
+
+  /* ---------- sections ---------- */
+  section{padding:clamp(3rem,6vw,4.75rem) 0;border-bottom:1px solid var(--line)}
+  h2{
+    font-family:Archivo,sans-serif;font-weight:700;font-size:1.5rem;
+    letter-spacing:-.018em;margin:0 0 2.25rem;
+  }
+  .prose{max-width:var(--measure);margin:0}
+  .prose + .prose{margin-top:1.1rem}
+
+  /* ---------- services ---------- */
+  .services{list-style:none;margin:0;padding:0;border-left:1px solid var(--line)}
+  .services li{
+    display:grid;grid-template-columns:minmax(0,16rem) minmax(0,1fr);
+    gap:.5rem clamp(1.5rem,3vw,3rem);
+    padding:1.5rem 0 1.5rem clamp(1.25rem,3vw,2.25rem);position:relative;
+  }
+  .services li + li{border-top:1px solid var(--line)}
+  .services li::before{
+    content:"";position:absolute;left:0;top:2.35rem;
+    width:clamp(.7rem,1.6vw,1.1rem);height:1px;background:var(--line);
+  }
+  .svc-head{display:flex;align-items:center;gap:.7rem}
+  .svc-head svg{flex:0 0 auto;color:var(--navy)}
+  .services h3{
+    font-family:Archivo,sans-serif;font-weight:700;font-size:1.0625rem;
+    margin:0;line-height:1.35;
+  }
+  .services p{margin:0;color:var(--slate)}
+
+  /* ---------- contact ---------- */
+  .contact-panel{
+    background:var(--mist);padding:clamp(1.75rem,4vw,2.5rem);
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));
+    gap:1.75rem clamp(1.75rem,4vw,3rem);
+  }
+  .field{margin:0}
+  .field dt{font-family:Archivo,sans-serif;font-weight:700;font-size:.9375rem;margin:0 0 .3rem}
+  .field dd{margin:0;color:var(--slate)}
+
+  footer{
+    background:var(--navy-deep);color:#9FB4D8;font-size:.9375rem;
+    padding:2.25rem 0 2.5rem;
+  }
+  footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+  footer p{margin:0}
+
+  @media (max-width:820px){
+    .services li{grid-template-columns:1fr}
+    .services li::before{top:1.9rem}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="masthead">
+      <img src="assets/clear-networks-white.png" alt="Clear Networks Inc." width="609" height="35">
+      <p class="locale">Toronto, Ontario</p>
+    </div>
+    <div class="hero-copy">
+      <h1>The network behind the building.</h1>
+      <p class="standfirst">Clear Networks designs, installs and supports the wired and wireless
+        infrastructure inside commercial properties — along with the firewalls, switching and
+        day-to-day support that keep it running.</p>
+    </div>
+  </div>
+  <img class="hero-art" src="assets/skyline.svg"
+       alt="A block of office towers at night, with one building cut away to show the carrier circuit entering at street level, the riser running up through every floor, and network equipment on each level.">
+</header>
+
+<div class="wrap">
+
+  <section>
+    <h2>What we do</h2>
+    <ul class="services">
+      <li>
+        <div class="svc-head">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 14V9h10v5M12 9V4"/>
+          </svg>
+          <h3>Network infrastructure</h3>
+        </div>
+        <p>Switching, routing and VLAN design for base building and tenant networks — new installs,
+          refreshes, and untangling what was left behind by whoever came before.</p>
+      </li>
+      <li>
+        <div class="svc-head">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M12 3l7 3v6c0 4.2-2.9 7.6-7 9-4.1-1.4-7-4.8-7-9V6z"/><path d="M5 12h14"/>
+          </svg>
+          <h3>Firewalls and perimeter security</h3>
+        </div>
+        <p>Edge firewall deployment and configuration, secure remote access, and segmentation
+          between building systems, tenant networks and corporate infrastructure.</p>
+      </li>
+      <li>
+        <div class="svc-head">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <path d="M4.5 9a10.5 10.5 0 0115 0M7.5 12.5a6 6 0 019 0"/><circle cx="12" cy="17.5" r="1.4" fill="currentColor" stroke="none"/>
+          </svg>
+          <h3>Wireless</h3>
+        </div>
+        <p>Coverage design and controller-managed access points for offices, common areas,
+          amenity floors and back-of-house.</p>
+      </li>
+      <li>
+        <div class="svc-head">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="12" rx="1"/><path d="M9 20h6M12 16v4"/>
+          </svg>
+          <h3>Day-to-day IT support</h3>
+        </div>
+        <p>Workstations, email, printing and the practical problems a site runs into. Break-fix
+          when something breaks, project work when something needs replacing.</p>
+      </li>
+      <li>
+        <div class="svc-head">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <path d="M8 7H6a5 5 0 000 10h2M16 7h2a5 5 0 010 10h-2M9 12h6"/>
+          </svg>
+          <h3>Vendor coordination</h3>
+        </div>
+        <p>Working alongside carriers, building systems integrators and tenant IT so that the
+          network side of a project isn't the part that stalls it.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Who we work with</h2>
+    <p class="prose">Our work is concentrated in commercial property — office buildings and the
+      management teams that run them. The problems tend to arrive sideways: a circuit that was never
+      documented, a tenant fit-out on a deadline, a system that stopped talking to the one beside it.</p>
+    <p class="prose">Most of our engagements are long-running, and some have been in place for more
+      than a decade. We are small, we answer our own phone, and the person who scoped the work is
+      the person who shows up to do it.</p>
+  </section>
+
+  <section style="border-bottom:0">
+    <h2>Get in touch</h2>
+    <div class="contact-panel">
+      <dl class="field">
+        <dt>Clear Networks Inc.</dt>
+        <dd>[CORPORATE ADDRESS]<br>[CITY], Ontario [POSTAL CODE]</dd>
+      </dl>
+      <dl class="field">
+        <dt>Telephone</dt>
+        <dd><a href="tel:+1">[PHONE NUMBER]</a></dd>
+      </dl>
+      <dl class="field">
+        <dt>Email</dt>
+        <dd><a href="mailto:jlovell@clearnetworks.ca">jlovell@clearnetworks.ca</a></dd>
+      </dl>
+      <dl class="field">
+        <dt>Service area</dt>
+        <dd>Toronto and the Greater Toronto Area</dd>
+      </dl>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Clear Networks Inc. — serving the Greater Toronto Area since [YEAR].</p>
+    <p>clearnetworks.ca</p>
+  </div>
+</footer>
+
+</body>
+</html>
